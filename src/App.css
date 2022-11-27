@@ -1,38 +1,139 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  font-family: 'montseratt', sans-serif;
+
+} 
+
+.app {
+  background-image: url('/src/background-images/03-Late-Morning.png');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
+
+.morning1 {
+  background-image: url(/src/background-images/01-Early-Morning.png);
+}
+
+.morning2 {
+  background-image: url(/src/background-images/02-Mid-Morning.png);
+}
+
+.morning3 {
+  background-image: url(/src/background-images/03-Late-Morning.png);
+}
+
+.afternoon4{
+  background-image: url(/src/background-images/04-Early-Afternoon.png);
+}
+
+.afternoon5{
+  background-image: url(/src/background-images/05-Mid-Afternoon.png); 
+}
+
+.evening7{
+  background-image: url(/src/background-images/07-Early-Evening.png);
+}
+
+.evening9 {
+  background-image: url(/src/background-images/09-Late-Evening.png);
+}
+
+.night10 {
+  background-image: url(/src/background-images/10-Early-Night.png);
+}
+
+.night11 {
+  background-image: url(/src/background-images/11-Mid-Night.png);
+}
+
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+
+}
+
+.search-box { /* Need further checking on this Class and the next one */
+  width: 100%;
+  
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 0 0 75px;
+
+  appearance: none;
+  background: none;
+  border: 0;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0, 0,0 , 0.2px);
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+
+.location-box .location {
+  color:white;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+
+
+}
+
+.weather-box {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.weather-box .temp{
+  text-align: center;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px 25px;
+  font-size: 105px;
+  font-weight: 900;
+  border-radius: 16px;
+  color: #FFF;
+  
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  box-shadow: 3px 6px  rgba(0, 0, 0, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-box .weather {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
 }
